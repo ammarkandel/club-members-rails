@@ -13,9 +13,18 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <div>
-      <%= show_sign_up_or_in %>
+    <div class="show-sign">
+      <%= show_sign %>
     </div>
+
+    <nav>
+      <div class="logo">
+        <%= link_to "Ideas", root_path, class: "logo" %>
+      </div>
+      <ul>
+        
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
