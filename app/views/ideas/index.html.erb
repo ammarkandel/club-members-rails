@@ -1,24 +1,13 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Ideas</h1>
+<h1 class="main-title">Add Your Ideas With Our Club</h1>
 
 <table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody class="user-control">
     <% @ideas.each do |idea| %>
-      <h5><%= idea.user.name %></h5>
-      <h3><%= idea.author_idea %></h3>
-      <tr>
-        <!--<td><%= link_to 'Show', idea %></td>-->
-        <!--<td><%= link_to 'Edit', edit_idea_path(idea) %></td>-->
-        <!--<td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-        <td><%= check_access(idea) %></td>
-      </tr>
+      <div class="author-idea">
+        <h5><%= idea.user.name %></h5>
+        <h3><%= idea.author_idea %></h3>
+        <p class="user-access"><%= check_access(idea) %></p>
+      </div>
     <% end %>
   </tbody>
 </table>

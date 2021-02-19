@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+.main-title {
+  text-align: center;
+}
+
+.author-idea {
+  height: 80px;
+  padding: 40px;
+  border: 1px solid gray;
+}
+
+.user-access a{
+  padding: 10px;
+}
