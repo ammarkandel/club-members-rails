@@ -1,5 +1,6 @@
 class IdeasController < ApplicationController
   before_action :set_idea, only: %i[ show edit update destroy ]
+  before_action :authenticate_member!, only: %i[new create show edit update destroy]
 
   # GET /ideas or /ideas.json
   def index
@@ -64,6 +65,6 @@ class IdeasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def idea_params
-      params.require(:idea).permit(:idea)
+      params.require(:idea).permit(:author_idea)
     end
 end

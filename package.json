@@ -1,5 +1,5 @@
 {
-  "name": "club-members-rails",
+  "name": "club-members",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",

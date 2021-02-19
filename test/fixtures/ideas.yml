@@ -1,7 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  idea: MyText
+  author_idea: MyText
 
 two:
-  idea: MyText
+  author_idea: MyText

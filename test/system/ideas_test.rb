@@ -14,7 +14,7 @@ class IdeasTest < ApplicationSystemTestCase
     visit ideas_url
     click_on "New Idea"
 
-    fill_in "Idea", with: @idea.idea
+    fill_in "Author idea", with: @idea.author_idea
     click_on "Create Idea"
 
     assert_text "Idea was successfully created"
@@ -25,7 +25,7 @@ class IdeasTest < ApplicationSystemTestCase
     visit ideas_url
     click_on "Edit", match: :first
 
-    fill_in "Idea", with: @idea.idea
+    fill_in "Author idea", with: @idea.author_idea
     click_on "Update Idea"
 
     assert_text "Idea was successfully updated"

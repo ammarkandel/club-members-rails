@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ClubMembersRails</title>
+    <title>ClubMembers</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,18 +13,13 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <div class="show-sign">
-      <%= show_sign %>
-    </div>
-
     <nav>
-      <div class="logo">
-        <%= link_to "Ideas", root_path, class: "logo" %>
+      <div>
+        <%= check_new_idea %>
       </div>
-      <ul>
-        
-      </ul>
     </nav>
     <%= yield %>
   </body>
 </html>
+
+<!-- # registraion MODEL and controlers AND Guard --> 
