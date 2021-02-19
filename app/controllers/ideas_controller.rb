@@ -1,6 +1,6 @@
 class IdeasController < ApplicationController
   before_action :set_idea, only: %i[ show edit update destroy ]
-  before_action :authenticate_member!, only: %i[new create show edit update destroy]
+  before_action :authenticate_user!, only: %i[new create show edit update destroy]
 
   # GET /ideas or /ideas.json
   def index
@@ -8,21 +8,19 @@ class IdeasController < ApplicationController
   end
 
   # GET /ideas/1 or /ideas/1.json
-  def show
-  end
+  def show; end
 
   # GET /ideas/new
   def new
-    @idea = Idea.new
+    @idea = current_user.ideas.build
   end
 
   # GET /ideas/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /ideas or /ideas.json
   def create
-    @idea = Idea.new(idea_params)
+    @idea = current_user.ideas.build(idea_params)
 
     respond_to do |format|
       if @idea.save
@@ -65,6 +63,6 @@ class IdeasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def idea_params
-      params.require(:idea).permit(:author_idea)
+      params.require(:idea).permit(:author_idea, :name)
     end
 end

@@ -11,6 +11,7 @@
 
   <tbody class="user-control">
     <% @ideas.each do |idea| %>
+      <h5><%= idea.user.name %></h5>
       <h3><%= idea.author_idea %></h3>
       <tr>
         <!--<td><%= link_to 'Show', idea %></td>-->
