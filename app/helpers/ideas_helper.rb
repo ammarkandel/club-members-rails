@@ -8,4 +8,8 @@ module IdeasHelper
     end
     out.html_safe
   end
+
+  def access_name(idea)
+    idea.user.name if user_signed_in?
+  end
 end
