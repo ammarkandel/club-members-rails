@@ -4,7 +4,7 @@ This project built to let users share there ideas.
 
 ## About
 
-This project is to implement authentication systems so users can only access areas of a site they are authorized to.
+This project is to implement authentication systems so users can only access areas of a site they are authorized to. Also guests can see the users ideas without access or modify any idea or create new one.
 
 ## Usage
 
