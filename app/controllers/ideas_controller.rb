@@ -12,7 +12,7 @@ class IdeasController < ApplicationController
 
   # GET /ideas/new
   def new
-    @idea = current_user.ideas.build
+    @idea = Idea.new
   end
 
   # GET /ideas/1/edit
