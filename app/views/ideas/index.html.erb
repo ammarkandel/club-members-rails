@@ -1,0 +1,15 @@
+<h1 class="main-title">Add Your Ideas With Our Club</h1>
+
+<table>
+  <tbody class="user-control">
+    <% @ideas.each do |idea| %>
+      <div class="author-idea">
+        <h5><%= access_name(idea) %></h5>
+        <h3><%= idea.author_idea %></h3>
+        <p class="user-access"><%= check_access(idea) %></p>
+      </div>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

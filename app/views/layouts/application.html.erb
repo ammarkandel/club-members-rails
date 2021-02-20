@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClubMembers</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <nav>
+      <div>
+        <%= check_new_idea %>
+      </div>
+      <p><%= check_log_out %></p>
+      <p><%= check_sign_up %></p>
+      <p><%= check_sign_in %></p>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
