@@ -10,7 +10,7 @@ This project is to implement authentication systems so users can only access are
 
 - Clone the repo "git@github.com:ammarkandel/club-members-rails.git".
 - Run "rails db:create" and "rails db:migrate".
-- Then run "rails s".
+- Then run "rails s" to open local host.
 - Go to browser and open this path "http://localhost:3000"
 
 ## Technologies
