@@ -61,6 +61,9 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  # warn if queries retrieves too many records
+  config.active_record.warn_on_records_fetched_greater_than = 1000
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
